@@ -26,6 +26,11 @@ function appConfig($stateProvider, $urlRouterProvider) {
             templateUrl: "views/congrats.html",
             controller: "CongratsController as vm"
         })
+        .state('pay', {
+            url: '/pay',
+            templateUrl: "views/pay.html",
+            controller: "PayController as vm"
+        })
         .state('plan', {
             url: '/plan',
             templateUrl: "views/plan.html",
