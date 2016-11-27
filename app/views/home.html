@@ -1,0 +1,53 @@
+<!-- @author ctola-->
+
+
+
+<div class="row">
+    <div class="col s12 title">
+        <h1>Hey there {{vm.title | filter: toUpper}}</h1>
+        <h4>Let's get to know you!</h4>
+    </div>
+    <div class="col s12 input">
+      <div input-field>
+        <input type="text" ng-model="vm.title" length="150">
+        <label>What's your name?</label>
+      </div>
+    </div>
+
+    <div class="col s12 input">
+       <form action="#">
+    <p class="range-field">
+    <label>How old are you today?</label>
+      <input type="range" id="test5" min="18" max="68" value="25"/>
+
+    </p>
+  </form>
+    </div>
+
+    <div class="col s12 input">
+       <form action="#">
+    <p class="range-field">
+    
+    <label>
+    And how old do you plan to be when you retire?</label>
+      <input type="range" id="test5" min="55" max="75" value="68"/>
+
+    </p>
+  </form>
+    </div>  
+
+        <div class="col s12 input">
+      <div input-field>
+       <input placeholder="Euros" id="first_name" type="text" class="validate">
+          <label for="first_name">Lastly, what's your annual income?</label>
+      </div>
+    </div>
+
+
+    <div class="col s12">
+    <a ui-sref="plan" class="btn btn-block btn-info green darken-1">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+    </div>
+</div>
+
